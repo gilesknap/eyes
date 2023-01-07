@@ -1,0 +1,417 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\eyes.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\eyes.ico"
+IDI_CREATURE1           ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About eyes"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Microscosm      V2.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 1997",IDC_STATIC,39,82,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+    LTEXT           "Conclusive proof that Darwin knew what he was talking about.",
+                    IDC_STATIC,41,25,119,20,SS_NOPREFIX
+    LTEXT           "Written by Giles Knap and David Hill.",IDC_STATIC,42,49,
+                    119,20,SS_NOPREFIX
+END
+
+IDD_EYES_DIALOG DIALOGEX 0, 0, 395, 249
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Microcosm"
+MENU IDR_MAINMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Living :",IDC_STATIC,320,139,26,11
+    LTEXT           "Deaths :",IDC_STATIC,320,150,30,11
+    RTEXT           "0",IDC_LIVING,348,139,38,8
+    RTEXT           "0",IDC_DEATHS,349,150,37,8
+    LTEXT           "Time :",IDC_STATIC,320,128,20,11
+    RTEXT           "0",IDC_TIME,340,128,46,8
+    CONTROL         "Slider1",IDC_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | TBS_BOTH | WS_TABSTOP,358,16,24,110
+    LTEXT           "Speed",IDC_STATIC,361,5,22,8
+    CONTROL         "Slider1",IDC_GRASS,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | TBS_BOTH | WS_TABSTOP,329,16,26,110
+    LTEXT           "Grass",IDC_STATIC,332,5,19,8
+    LTEXT           "Gens :",IDC_STATIC,320,161,26,11
+    RTEXT           "0",IDC_GENERATIONS,348,161,38,8
+    PUSHBUTTON      "Start",IDC_START,326,226,54,15
+    PUSHBUTTON      "Display Off",IDC_DISPLAY,326,207,54,15
+    PUSHBUTTON      "Evo Twiddle !",IDC_TWIDDLE,326,187,54,15
+    LTEXT           "Species",IDC_STATIC,320,173,26,11
+    RTEXT           "0",IDC_SPECIES,348,173,38,8
+END
+
+IDD_TWIDDLE DIALOG DISCARDABLE  0, 0, 286, 138
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Creature Details"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,15,93,256,20
+    EDITTEXT        IDC_ENERGY,163,12,32,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_X,163,30,18,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y,184,30,17,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MUTATE,163,46,32,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BREED,164,62,32,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Copy",IDC_COPY,122,117,41,14
+    PUSHBUTTON      "Code",IDC_SHOWCODE,176,117,41,14
+    DEFPUSHBUTTON   "&Done",IDDONE,230,117,41,14
+    LTEXT           "Creature ID :",IDC_STATIC,15,27,49,9
+    LTEXT           "Species :",IDC_STATIC,15,40,49,9
+    LTEXT           "Generation :",IDC_STATIC,15,53,49,9
+    LTEXT           "0",IDC_CreatureID,70,27,29,9
+    LTEXT           "0",IDC_CreatureSpecies,70,40,29,9
+    LTEXT           "0",IDC_CreatureGeneration,70,53,29,9
+    LTEXT           "0",IDC_Number,70,14,29,9
+    LTEXT           "List Position :",IDC_STATIC,16,14,49,9
+    LTEXT           "Energy :",IDC_STATIC,111,14,43,9
+    LTEXT           "X and Y Pos :",IDC_STATIC,112,31,43,9
+    LTEXT           "Mutate :",IDC_STATIC,112,47,33,9
+    LTEXT           "Breed :",IDC_STATIC,112,63,33,9
+    CONTROL         "",IDC_PICTURE,"Static",SS_BLACKFRAME,205,12,64,52
+    LTEXT           "Name :",IDC_STATIC,16,79,27,9
+    EDITTEXT        IDC_NAME,44,76,86,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Save File",IDC_SAVEFILE,14,117,41,14
+    PUSHBUTTON      "Load File",IDC_LOADFILE,68,117,41,14
+    PUSHBUTTON      "Choose Colour",IDC_COLOUR,205,68,63,14
+END
+
+IDD_CODE_EDIT DIALOG DISCARDABLE  0, 0, 237, 202
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Creature Code"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Done",IDDONE,192,181,38,14
+    EDITTEXT        IDC_CODE_TEXT,7,7,134,170,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "IP",IDC_STATIC,147,18,8,9
+    LTEXT           "R",IDC_STATIC,147,35,8,9
+    LTEXT           "I1",IDC_STATIC,147,53,8,9
+    LTEXT           "I2",IDC_STATIC,147,71,8,9
+    LTEXT           "I3",IDC_STATIC,147,88,8,9
+    LTEXT           "I4",IDC_STATIC,147,107,8,9
+    LTEXT           "I5",IDC_STATIC,147,123,8,9
+    EDITTEXT        IDC_IP,156,16,24,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_R,156,33,24,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_I1,156,51,24,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_I2,156,69,24,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_I3,156,86,24,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_I4,156,104,24,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_I5,156,121,24,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Disassem",IDC_SETSTART,47,181,37,14
+    EDITTEXT        ID_START_POINT,193,150,27,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Step",IDSTEP,97,181,38,14
+    PUSHBUTTON      "&Assemble",ID_SAVE,7,181,38,14
+    LTEXT           "E",IDC_STATIC,191,17,8,9
+    LTEXT           "M",IDC_STATIC,191,35,8,9
+    LTEXT           "B",IDC_STATIC,191,53,8,9
+    LTEXT           "X",IDC_STATIC,191,70,8,9
+    LTEXT           "Y",IDC_STATIC,191,88,8,9
+    EDITTEXT        IDC_E,199,16,24,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M,199,33,24,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_B,199,51,24,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_X,199,69,24,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y,199,86,24,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Run",IDRUN,137,181,38,14
+    RTEXT           "Disassemble from :",IDC_STATIC,143,148,43,19
+END
+
+IDD_OPTIONS DIALOG DISCARDABLE  0, 0, 343, 210
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Startup Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,286,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,286,24,50,14
+    LTEXT           "Universe Size",IDC_STATIC,15,15,50,10
+    EDITTEXT        IDC_UNI_SIZE,71,13,43,12,ES_AUTOHSCROLL
+    LTEXT           "Initial Grass",IDC_STATIC,15,29,50,10
+    EDITTEXT        IDC_GRASS,71,28,43,12,ES_AUTOHSCROLL
+    LTEXT           "Grass Energy",IDC_STATIC,15,43,50,10
+    EDITTEXT        IDC_GRASS_POINTS,71,43,43,12,ES_AUTOHSCROLL
+    LTEXT           "Move Cost",IDC_STATIC,19,83,50,10
+    EDITTEXT        IDC_MOVE_POINTS,71,83,43,12,ES_AUTOHSCROLL
+    LTEXT           "Rest Cost",IDC_STATIC,20,98,50,10
+    EDITTEXT        IDC_REST_POINTS,72,98,43,12,ES_AUTOHSCROLL
+    LTEXT           "Breed Rate:",IDC_STATIC,128,71,52,9
+    LTEXT           "Max :",IDC_STATIC,186,84,19,9
+    LTEXT           "Min:",IDC_STATIC,129,84,14,9
+    EDITTEXT        IDC_MINBREED,146,83,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAXBREED,206,83,34,12,ES_AUTOHSCROLL
+    LTEXT           "Mutate Rate (%):",IDC_STATIC,129,103,64,9
+    LTEXT           "Max :",IDC_STATIC,186,116,19,9
+    LTEXT           "Min:",IDC_STATIC,129,116,14,9
+    EDITTEXT        IDC_MINMUTE,147,114,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAXMUTE,206,114,34,12,ES_AUTOHSCROLL
+    LTEXT           "Start:",IDC_STATIC,247,84,18,9
+    EDITTEXT        IDC_STARTBREED,267,83,34,12,ES_AUTOHSCROLL
+    LTEXT           "Start:",IDC_STATIC,248,115,18,9
+    EDITTEXT        IDC_STARTMUTE,268,114,34,12,ES_AUTOHSCROLL
+    LTEXT           "Initial Energy",IDC_STATIC,20,114,50,10
+    EDITTEXT        IDC_START_ENERGY,72,114,43,12,ES_AUTOHSCROLL
+    LTEXT           "Herbivores :",IDC_STATIC,127,15,40,9
+    LTEXT           "Carnivores :",IDC_STATIC,128,30,41,9
+    EDITTEXT        IDC_HERB,170,13,43,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CARN,170,29,43,12,ES_AUTOHSCROLL
+    CONTROL         "Omnivores",IDC_OMNI,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,218,13,56,12
+    LTEXT           "Fight Cost :",IDC_STATIC,128,46,41,9
+    EDITTEXT        IDC_FIGHT,170,45,43,12,ES_AUTOHSCROLL
+    LTEXT           "Move Cost",IDC_STATIC,20,153,50,10
+    EDITTEXT        IDC_MOVE_POINTS2,72,153,43,12,ES_AUTOHSCROLL
+    LTEXT           "Rest Cost",IDC_STATIC,20,168,50,10
+    EDITTEXT        IDC_REST_POINTS2,72,168,43,12,ES_AUTOHSCROLL
+    LTEXT           "Breed Rate:",IDC_STATIC,128,141,52,9
+    LTEXT           "Max :",IDC_STATIC,186,153,19,9
+    LTEXT           "Min:",IDC_STATIC,130,153,14,9
+    EDITTEXT        IDC_MINBREED2,146,153,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAXBREED2,206,153,34,12,ES_AUTOHSCROLL
+    LTEXT           "Mutate Rate (%):",IDC_STATIC,130,173,64,9
+    LTEXT           "Max :",IDC_STATIC,186,185,19,9
+    LTEXT           "Min:",IDC_STATIC,130,185,14,9
+    EDITTEXT        IDC_MINMUTE2,148,184,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAXMUTE2,206,184,34,12,ES_AUTOHSCROLL
+    LTEXT           "Start:",IDC_STATIC,248,153,18,9
+    EDITTEXT        IDC_STARTBREED2,268,153,34,12,ES_AUTOHSCROLL
+    LTEXT           "Start:",IDC_STATIC,248,185,18,9
+    EDITTEXT        IDC_STARTMUTE2,268,184,34,12,ES_AUTOHSCROLL
+    LTEXT           "Initial Energy",IDC_STATIC,20,184,50,10
+    EDITTEXT        IDC_START_ENERGY2,72,184,43,12,ES_AUTOHSCROLL
+    GROUPBOX        "Herbivore",IDC_STATIC,13,64,292,65
+    GROUPBOX        "Carnivore",IDC_STATIC,14,135,292,65
+    CONTROL         "Round World!",IDC_ROUND,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,218,45,56,12
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "eyes MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "eyes\0"
+            VALUE "LegalCopyright", "Copyright (C) 1997\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "eyes.EXE\0"
+            VALUE "ProductName", "eyes Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_EYES_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 386
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_TWIDDLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_CODE_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 336
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Load",                        ID_FILE_LOAD
+        MENUITEM "Save",                        ID_FILE_SAVE
+        MENUITEM "Startup Settings...",         ID_FILE_STARTUPSETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "Reset",                       IDC_RESET
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_FILE_EXIT
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About...",                    IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About eyes..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\eyes.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
