@@ -14,7 +14,7 @@ Resurrecting the code in 2011 was fun due to the improvement in hardware perform
 
 Uploading to github in 2023 for further development ...
 
-I could not make this compile in 2023 but the enclosed zip file contains the binaries and dependent DLLs from the 2011 reboot. Requires windows 20 run. 
+I could not make this compile in 2023 but the enclosed zip file contains the binaries and dependent DLLs from the 2011 reboot. Requires windows to run. 
 
 ## RISC processor spec
 
