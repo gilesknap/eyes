@@ -11,3 +11,7 @@ Back in 2000 I found quite interesting survival behaviour emerging from multiple
 I also found that resurrecting the code in 2011 was fun due to the improvement in hardware!
 
 Uploading to github in 2023 for further development ...
+
+## RISC processor spec
+
+[Vision.pdf](https://github.com/gilesknap/eyes/files/10464992/Vision.pdf)
