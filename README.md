@@ -8,9 +8,13 @@ Implements a very simple RISC assembly code that moves 'creatures' around a 2D g
 
 Back in 2000 I found quite interesting survival behaviour emerging from multiple runs of the 'world'.
 
-I also found that resurrecting the code in 2011 was fun due to the improvement in hardware!
+IN 2004 I rewrote it in C# but abandoned that as I discovered that a JIT language is not fit for this purpose - way too slow. 
+
+Resurrecting the code in 2011 was fun due to the improvement in hardware performance! (The code is single threaded)
 
 Uploading to github in 2023 for further development ...
+
+I could not make this compile in 2023 but the enclosed zip file contains the binaries and dependent DLLs from the 2011 reboot. Requires windows 20 run. 
 
 ## RISC processor spec
 
