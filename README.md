@@ -19,3 +19,7 @@ I could not make this compile in 2023 but the enclosed zip file contains the bin
 ## RISC processor spec
 
 [Vision.pdf](https://github.com/gilesknap/eyes/files/10464992/Vision.pdf)
+
+## Reimagining 
+
+I have re-written this same concept in Rust here https://github.com/gilesknap/eyes2
