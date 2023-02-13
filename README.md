@@ -6,9 +6,9 @@ an 'evolution simulator'. Original code from year 2000 using MFC
 
 Implements a very simple RISC assembly code that moves 'creatures' around a 2D grid. The 'genome' of each creature is a block of memory that is interpreted as assmenly code. All creatures in the 'world' get one instruction execution per cycle. Successful creatures can beget 'children' and a mutation algorithm copies the code from parent to child.
 
-Back in 2000 I found quite interesting survival behaviour emerging from multiple runs of the 'world'.
+Back in 1999 I found quite interesting survival behaviour emerging from multiple runs of the 'world'.
 
-IN 2004 I rewrote it in C# but abandoned that as I discovered that a JIT language is not fit for this purpose - way too slow. 
+IN 2003 I rewrote it in C# but abandoned that as I discovered that a JIT language is not fit for this purpose - way too slow. 
 
 Resurrecting the code in 2011 was fun due to the improvement in hardware performance! (The code is single threaded)
 
